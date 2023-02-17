@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dinosaurs</title>
+        <link rel="stylesheet" href="C:\Users\LENOVO\Downloads\html-s\style.css">
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <img src="C:\Users\LENOVO\Downloads\a05e09d0634bc2ef4685205d91be2c8c-removebg-preview (2).png" alt="dino logo" width="200px">
+                <div class="nav-links">
+                    <ul>
+                        <li><a class="HOME-link" href="file:///C:/Users/LENOVO/Downloads/html-s/task-3.html"><h2 class="Home">HOME</h2></a></li>
+                        <li><a class="HOME-link" href="file:///C:/Users/LENOVO/Downloads/html-s/help.html"><h2 class="Home">HELP</h2></a></li>
+                    </ul>
+                </div>
+            </nav>
+            
+            <h1>Dinosaurs</h1>
+        </section>
+        <script type="text/javascript">
+            window.addEventListener('scroll', reveal);
+
+            function reveal(){
+                var reveals = document.querySelectorAll('.reveal');
+                
+                for(var i =0; i < reveals.length; i++){
+
+                    var windoeheight = window.innerHeight;
+                    var revealTop = reveals[i].getBoundingClientRect().top;
+                    var revealPoint = 150;
+                    
+                    if(revealTop < windoeheight - revealPoint){
+                        reveals[i].classList.add('active');
+                    }
+                    else{
+                        reveals[i].classList.remove('active');
+                    }
+                }
+            }
+        </script>
+        
+        <h1 class="tittel reveal">the most popular dinosaurs</h1>
+        <a  class="T-rex reveal" href="C:\Users\LENOVO\Downloads\html-s\t-rex.html"><div><h2>T-rex</h2></div></a>
+        <a  class="Giga reveal" href="file:///C:/Users/LENOVO/Downloads/html-s/GIGA.html"><div><h2>GIGA</h2></div></a>
+        <a  class="Titen reveal" href="file:///C:/Users/LENOVO/Downloads/html-s/TITEN.html"><div><h2>Titen</h2></div></a>
+        <a  class="RABTOR reveal" href="file:///C:/Users/LENOVO/Downloads/html-s/RAPTOR.html"><div><h2>Rabtor</h2></div></a>
+        <a  class="CARNATAURUS reveal" href="file:///C:/Users/LENOVO/Downloads/html-s/carno.html"><div><h2>Carno</h2></div></a>
+        <div class="my-links">
+            <h2></h2>
+            <a href="https://www.instagram.com/akoia_nato_14/" class="instagram"><img class="Instagram" src="C:\Users\LENOVO\Downloads\2048px-Instagram_logo_2016.svg-removebg-preview.png" alt="instagram logo" width="50px"></a><br><br><br><a href="https://www.facebook.com/profile.php?id=100025539099708" class="facebook"><img  class="Facebook" src="https://1000logos.net/wp-content/uploads/2021/04/Facebook-logo.png" alt="facebook logo" width="100px"></a>
+            <img src="C:\Users\LENOVO\Downloads\a05e09d0634bc2ef4685205d91be2c8c-removebg-preview (2).png" alt="dino logo" width="200px" class="logo">
+
+        </div>
+    </body>
+</html>
